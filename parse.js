@@ -7,16 +7,7 @@ function parse(){
     .then((buffer) => {
         PDFLib.PDFDocument.load(buffer).then(pdfDoc => {
             const form = pdfDoc.getForm();
-            const fields = form.getFields();
-
-            debugList = document.getElementById("fields");
-            fields.forEach(field => {
-                const type = field.constructor.name
-                const name = field.getName()
-                debugList.innerHTML += `<li>${type}: ${name}</li>`
-            })
-			
-			paste = document.getElementById("paste").value;
+            paste = document.getElementById("paste").value;
 			pokes = parseSet(paste);
 
 			for(var i = 0; i < pokes.length; i++){
