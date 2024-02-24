@@ -28,12 +28,12 @@ function parse(){
 				form.getField(`Held Item${second_post_fix}`).setText(poke.item);
 
 				form.getField(`Level${first_post_fix}`).setText(poke.level.toString());
-				form.getField(`HP${first_post_fix}`).setText(poke.rawStats.hp.toString());
-				form.getField(`Atk${first_post_fix}`).setText(poke.rawStats.atk.toString());
-				form.getField(`Def${first_post_fix}`).setText(poke.rawStats.def.toString());
-				form.getField(`Sp Atk${first_post_fix}`).setText(poke.rawStats.spa.toString());
-				form.getField(`Sp Def${first_post_fix}`).setText(poke.rawStats.spd.toString());
-				form.getField(`Speed${first_post_fix}`).setText(poke.rawStats.spe.toString());
+				form.getField(`HP${first_post_fix}`).setText(poke.stats.hp.toString());
+				form.getField(`Atk${first_post_fix}`).setText(poke.stats.atk.toString());
+				form.getField(`Def${first_post_fix}`).setText(poke.stats.def.toString());
+				form.getField(`Sp Atk${first_post_fix}`).setText(poke.stats.spa.toString());
+				form.getField(`Sp Def${first_post_fix}`).setText(poke.stats.spd.toString());
+				form.getField(`Speed${first_post_fix}`).setText(poke.stats.spe.toString());
 				
 				form.getField(`Move 1${first_post_fix}`).setText(poke.moves[0]);
 				form.getField(`Move 1${second_post_fix}`).setText(poke.moves[0]);
