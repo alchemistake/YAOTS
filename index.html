@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://unpkg.com/pdf-lib"></script>
+
+    <script type="text/javascript" src="./js/vendor/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/select2/select2.min.js"></script>
+    <script type="text/javascript" src="./js/vendor/url-search-params-0.1.2.min.js"></script>
+    <script type="text/javascript">
+        this.__createBinding = function (o, m, k) {
+            o[k] = m[k];
+        };
+        var calc = exports = {};
+        function require() { return exports };
+    </script>
+    <script type="text/javascript" src="./calc/util.js?51463f0d"></script>
+    <script type="text/javascript" src="./calc/stats.js?a9e37d1a"></script>
+    <script type="text/javascript" src="./calc/data/species.js?1de5d083"></script>
+    <script type="text/javascript" src="./js/data/sets/gen9.js?bbd448d4"></script>
+    <script type="text/javascript" src="./js/data/sets/gen8.js?1b2594b3"></script>
+    <script type="text/javascript" src="./js/data/sets/gen7.js?462be1d1"></script>
+    <script type="text/javascript" src="./js/data/sets/gen6.js?c57e30c8"></script>
+    <script type="text/javascript" src="./js/data/sets/gen5.js?98bdf3f2"></script>
+    <script type="text/javascript" src="./js/data/sets/gen4.js?b91d5bc5"></script>
+    <script type="text/javascript" src="./js/data/sets/gen3.js?edea70e1"></script>
+    <script type="text/javascript" src="./js/data/sets/gen2.js?69dd5292"></script>
+    <script type="text/javascript" src="./js/data/sets/gen1.js?f35e0151"></script>
+    <script type="text/javascript" src="./calc/data/types.js?a641e10b"></script>
+    <script type="text/javascript" src="./calc/data/natures.js?28612810"></script>
+    <script type="text/javascript" src="./calc/data/abilities.js?95a9afd4"></script>
+    <script type="text/javascript" src="./calc/data/moves.js?409a4002"></script>
+    <script type="text/javascript" src="./calc/data/items.js?a2dbf914"></script>
+    <script type="text/javascript" src="./calc/data/index.js?abecbd82"></script>
+    <script type="text/javascript" src="./calc/move.js?8b27dcd1"></script>
+    <script type="text/javascript" src="./calc/pokemon.js?1e459e1e"></script>
+    <script type="text/javascript" src="./calc/field.js?bbf04408"></script>
+    <script type="text/javascript" src="./calc/items.js?067e42a4"></script>
+    <script type="text/javascript" src="./calc/mechanics/util.js?d9f1f4fa"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen789.js?55d70249"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen56.js?d6c55072"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen4.js?e0a082d2"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen3.js?d6d72197"></script>
+    <script type="text/javascript" src="./calc/mechanics/gen12.js?277936f0"></script>
+    <script type="text/javascript" src="./calc/calc.js?40a2d9b1"></script>
+    <script type="text/javascript" src="./calc/desc.js?a25bdd8b"></script>
+    <script type="text/javascript" src="./calc/result.js?9f8881b5"></script>
+    <script type="text/javascript" src="./calc/adaptable.js?92e49194"></script>
+    <script type="text/javascript" src="./calc/index.js?0b1745b9"></script>
+    
+    <script src="parse.js"></script>
+</head>
+
+<body>
+    <h1>Yet Another OTS</h1>
+    <p>I noticed every ots filler for ScarVi was using a random pdf. This uses official PDF with a minor edit: I added
+        editable fields.</p>
+    <ul>
+        <li>Paste your pokepaste or pokebin then edit it a little bit</li>
+        <li>PDF is editable you can download then tweak it</li>
+        <li>Make sure you fill your name</li>
+        <li>Make sure your Showdown 0IVs are what they are in game.</li>
+    </ul>
+
+    <textarea id="paste" rows="10" cols="50"></textarea>
+    <button id="parse" onclick="parse()">Parse</button>
+
+    <h3>Debug</h3>
+    <ul id="fields">
+
+    </ul>
+</body>
+
+</html>
